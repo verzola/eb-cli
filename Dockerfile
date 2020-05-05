@@ -3,3 +3,4 @@ RUN apt update && apt install -y build-essential zlib1g-dev libssl-dev libncurse
 RUN git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
 RUN ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
 ENV PATH="/root/.ebcli-virtual-env/executables:$PATH"
+ENV PATH="/root/.pyenv/versions/3.7.2/bin:$PATH"
