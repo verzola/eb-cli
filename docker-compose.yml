@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  ebcli:
+    build: .
+    image: verzola/eb-cli
+    volumes:
+      - .:/app
+    command: eb --version
